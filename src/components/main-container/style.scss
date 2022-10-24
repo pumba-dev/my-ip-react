@@ -1,0 +1,10 @@
+@import "../../styles/variables";
+
+.main-container {
+  width: 100%;
+  height: $main-container-height;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
