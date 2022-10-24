@@ -1,0 +1,36 @@
+@import "./../../styles/variables.scss";
+
+.header {
+  width: 100vw;
+  min-height: 8rem;
+  height: 15vh;
+  background-color: $primary-blue;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+
+  img {
+    cursor: pointer;
+
+    min-width: 5rem;
+    max-width: 8rem;
+    margin: 2rem 3rem;
+
+    filter: brightness(0) saturate(100%) invert(68%) sepia(88%) saturate(1709%)
+      hue-rotate(126deg) brightness(94%) contrast(101%);
+  }
+
+  h1 {
+    color: $primary-white;
+    font-size: $font-xl;
+
+    @media (min-width: $screen-xl) {
+      font-size: $font-2xl;
+    }
+    @media (min-width: $screen-2xl) {
+      font-size: $font-3xl;
+    }
+  }
+}

@@ -4,7 +4,7 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/pumba-dev/my-ip-react?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/pumba-dev/my-ip-react?style=for-the-badge)
 
-<!-- <img src="frame-process-example.png" alt="exemplo de execução do algoritmo sobre um frame"> -->
+<img src="application-state.png" alt="Estado da aplicação">
 
 > O projeto tem como objetivo utilizar os conceitos aprendidos em React, Typescript e SASS.
 
