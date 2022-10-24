@@ -15,22 +15,28 @@
   img {
     cursor: pointer;
 
-    min-width: 5rem;
-    max-width: 8rem;
+    width: 4rem;
     margin: 2rem 3rem;
 
     filter: brightness(0) saturate(100%) invert(68%) sepia(88%) saturate(1709%)
       hue-rotate(126deg) brightness(94%) contrast(101%);
+
+    @media (min-width: $screen-md) {
+      width: 4.75rem;
+    }
+    @media (min-width: $screen-xl) {
+      width: 5.5rem;
+    }
   }
 
   h1 {
     color: $primary-white;
     font-size: $font-xl;
 
-    @media (min-width: $screen-xl) {
+    @media (min-width: $screen-md) {
       font-size: $font-2xl;
     }
-    @media (min-width: $screen-2xl) {
+    @media (min-width: $screen-xl) {
       font-size: $font-3xl;
     }
   }
