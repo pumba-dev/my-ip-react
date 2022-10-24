@@ -1,0 +1,29 @@
+@import "../../styles/variables.scss";
+
+.default-button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.45rem 1rem;
+
+  color: $primary-black;
+  background-color: $secondary-gray;
+  font-weight: 400;
+  white-space: nowrap;
+
+  font-size: $font-base;
+
+  @media (min-width: $screen-lg) {
+    font-size: $font-lg;
+    padding: 0.5rem 1.25rem;
+  }
+}
+
+.-light-blue {
+  background-color: $primary-light-blue;
+}
+
+.-blue {
+  background-color: $primary-blue;
+  color: $primary-white;
+}

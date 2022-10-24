@@ -1,3 +1,4 @@
+import DefaultButton from "../default-button";
 import DefaultInput from "../default-input";
 import "./style.scss";
 
@@ -11,7 +12,18 @@ export default function UserDataContainer() {
             <DefaultInput label="Idade" type="Number"></DefaultInput>
             <DefaultInput label="Celular" type="Number"></DefaultInput>
           </div>
-          <DefaultInput label="Meu IP" type="Text"></DefaultInput>
+          <div className="user-data__dual-input-container">
+            <DefaultInput label="Meu IP" type="Text"></DefaultInput>
+            <DefaultButton
+              label="ENCONTRAR IP"
+              type="light-blue"
+            ></DefaultButton>
+          </div>
+
+          <div className="input-container__buttons">
+            <DefaultButton label="SALVAR" type="blue"></DefaultButton>
+            <DefaultButton label="LIMPAR" type="blue"></DefaultButton>
+          </div>
         </div>
       </section>
     </>

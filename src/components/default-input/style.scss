@@ -7,7 +7,16 @@
   flex-direction: column;
 
   font-weight: 500;
-  font-size: $font-lg;
+
+  font-size: $font-base;
+
+  @media (min-width: $screen-lg) {
+    font-size: $font-lg;
+  }
+
+  @media (min-width: $screen-xl) {
+    font-size: $font-xl;
+  }
 }
 
 .input {
@@ -19,5 +28,33 @@
   padding: 0.5rem;
 
   font-weight: 400;
-  font-size: $font-lg;
+
+  font-size: $font-base;
+
+  @media (min-width: $screen-lg) {
+    height: 2.1rem;
+    font-size: $font-lg;
+  }
+
+  @media (min-width: $screen-xl) {
+    height: 2.3rem;
+    font-size: $font-xl;
+  }
+}
+
+// Remove Default HTML Input Efects
+textarea:focus,
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
 }
